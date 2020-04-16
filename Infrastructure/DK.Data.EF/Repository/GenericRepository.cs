@@ -637,6 +637,7 @@ namespace DK.Data.EF.Repository
         #region == Other Function ==
         private List<PropertyInfo> GetSystemType(IEnumerable<PropertyInfo> xPropertyInfoList)
         {
+
             List<PropertyInfo> xSystemProperty = new List<PropertyInfo>();
             foreach (var xProperty in xPropertyInfoList)
             {
