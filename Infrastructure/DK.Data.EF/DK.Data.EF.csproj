@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Configuration\BaseConfig\Extensions\**" />
+    <Compile Remove="Migration\**" />
+    <EmbeddedResource Remove="Configuration\BaseConfig\Extensions\**" />
+    <EmbeddedResource Remove="Migration\**" />
+    <None Remove="Configuration\BaseConfig\Extensions\**" />
+    <None Remove="Migration\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20190413111604_UserProperties.cs" />
+    <Compile Remove="Migrations\20190413111604_UserProperties.Designer.cs" />
+    <Compile Remove="Migrations\20190415153007_UserRole.cs" />
+    <Compile Remove="Migrations\20190415153007_UserRole.Designer.cs" />
+    <Compile Remove="Migrations\20190415153209_UserRole.cs" />
+    <Compile Remove="Migrations\20190415153209_UserRole.Designer.cs" />
+    <Compile Remove="Migrations\20190415161327_UserRole.cs" />
+    <Compile Remove="Migrations\20190415161327_UserRole.Designer.cs" />
+    <Compile Remove="Migrations\20190415162952_UserRole.cs" />
+    <Compile Remove="Migrations\20190415162952_UserRole.Designer.cs" />
+    <Compile Remove="Migrations\20190416055216_UserRole.cs" />
+    <Compile Remove="Migrations\20190416055216_UserRole.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\DK.Domain\DK.Domain.csproj" />
+    <ProjectReference Include="..\..\Core\DK.Service\DK.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.EntityFrameworkCore.Design">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.entityframeworkcore.design\2.2.0\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Design.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
